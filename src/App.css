@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::selection {
+	background-color: var(--lightest-navy);
+	/* color: var(--lightest-slate); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+	--x: 0;
+	--y: 0;
+	--green: #64ffda;
+	--navy: #0a192f;
+	--navy-shadow: rgba(2, 12, 27, 0.7);
+	--light-navy: #112240;
+	--lightest-navy: #233554;
+	--navy-shadow: rgba(2, 12, 27, 0.7);
+	--dark-slate: #495670;
+	--slate: #8892b0;
+	--light-slate: #a8b2d1;
+	--lightest-slate: #d3dcf7;
+	--white: #e6f1ff;
+	--easing: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--dark-slate);
+	border: 3px solid var(--navy);
+	border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+	background: var(--navy);
 }
 
-.App-link {
-  color: #61dafb;
+body {
+	width: 100%;
+	background-color: var(--navy);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+svg:hover {
+	stroke: var(--green);
 }
+
+button {
+	font-size: inherit;
+	padding: 12px 15px;
+	font-family: inherit;
+	color: var(--green);
+	background-color: var(--bg-color);
+	border: 1px solid var(--green);
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--green);
+		color: var(--navy);
+	}
+}
+
+.heading {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	overflow: hidden;
+}
+.numbered-heading {
+	font-size: clamp(20px, 5vw, 3rem);
+	font-family: "Calibre", sans-serif;
+	color: var(--lightest-slate);
+	margin: 10px 0 60px;
+	counter-reset: heading-counter 0;
+	width: 100%;
+	white-space: nowrap;
+
+	&::before {
+		content: counter(heading-counter, decimal-leading-zero) ".";
+		counter-increment: heading-counter;
+		margin-right: 5px;
+		font-family: "Fira Code", monospace;
+		color: var(--green);
+		font-size: clamp(17px, 4vw, 2.5rem);
+	}
+	&::after {
+		content: "";
+		display: inline-block;
+		vertical-align: 20%;
+		width: 100%;
+		height: 0.5px;
+		margin-left: 20px;
+		background-color: var(--slate);
+	}
+}
+
+.light {
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	background-image: radial-gradient(
+		circle at var(--x) var(--y),
+		#172d52ad 0%,
+		#0f234635 30%,
+		transparent 40%
+	);
+}
+
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: min(100px, 80vw);
+	aspect-ratio: 1;
+}
+
+#loadersvg {
+	width: 100%;
+	height: 100%;
+	color: var(--green);
+}
+

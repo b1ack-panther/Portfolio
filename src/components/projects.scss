@@ -1,0 +1,224 @@
+.projects-container {
+	min-height: 100vh;
+	margin: 100px 0;
+	.projects {
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+	}
+
+	.numbered-heading::before {
+		counter-reset: heading-counter 2;
+	}
+}
+.card {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	align-items: center;
+}
+.card-details {
+	z-index: 1;
+	grid-area: 1/6/2/13;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 10px;
+	font-family: "Calibre", monospace;
+	transition: all 0.7s ease;
+
+	& > p {
+		color: var(--green);
+		font-family: "Fira Code", sans-serif;
+		font-size: 13px;
+	}
+	& > h2 {
+		color: var(--lightest-slate);
+		font-size: 28px;
+		line-height: 0.9;
+	}
+	.box {
+		background-color: var(--light-navy);
+		color: var(--light-slate);
+		font-size: 20px;
+		padding: 15px;
+		margin: 10px 0;
+		text-align: right;
+		transition: all 0.7s ease;
+		border-radius: 5px;
+		box-shadow: 2px 0 20px -8px black;
+	}
+	.techs {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		font-family: "Fira Code", sans-serif;
+		color: var(--light-slate);
+		font-size: 14px;
+		font-weight: 400;
+	}
+	.links {
+		display: flex;
+		margin-right: -15px;
+		svg {
+			color: var(--light-slate);
+			margin: 0 15px;
+			&:hover {
+				color: var(--green);
+			}
+			width: 23px;
+			height: 23px;
+		}
+	}
+}
+.odd-card {
+	.card-details {
+		grid-area: 1/1/2/8;
+		.box {
+			text-align: left;
+		}
+		align-items: flex-start;
+	}
+	.card-img {
+		grid-area: 1/6/2/13;
+	}
+}
+.card:hover {
+	.card-img::after {
+		scale: 0;
+		background-color: #0a192f1f;
+	}
+}
+.card-img {
+	grid-area: 1/1/2/8;
+	aspect-ratio: 16/9;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-color: #0d408cc4;
+		mix-blend-mode: multiply;
+		z-index: 1;
+		transition: background-color 0.5s;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.other-projects-container {
+	margin-top: 150px;
+	> h2 {
+		text-align: center;
+		font-family: "calibre", monospace;
+		font-size: 2rem;
+		color: var(--lightest-slate);
+		margin-bottom: 30px;
+	}
+	.other-projects {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+		gap: 15px;
+
+		.other-card {
+			background-color: var(--light-navy);
+			border-radius: 10px;
+			padding: 25px 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			box-shadow: 0px 0 20px -8px black;
+
+			.icons {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				> svg {
+					color: var(--green);
+					width: 50px;
+					height: 50px;
+				}
+				div > a {
+					padding-left: 10px;
+					vertical-align: center;
+					svg {
+						color: var(--light-slate);
+					}
+				}
+			}
+			a {
+				text-decoration: none;
+				h2 {
+					color: var(--lightest-slate);
+					font-family: "calibre", monospace;
+					font-size: 24px;
+					margin-top: 20px;
+				}
+			}
+			> p {
+				font-family: "calibre", monospace;
+				font-weight: 400;
+				color: var(--light-slate);
+				margin-bottom: 10px;
+				letter-spacing: 0.5px;
+			}
+			.techs {
+				margin-top: auto;
+				display: flex;
+				flex-wrap: wrap;
+				color: var(--light-slate);
+				font-family: "fira code", sans-serif;
+				font-size: 13px;
+				gap: 10px;
+				font-weight: 300;
+			}
+		}
+	}
+	.other-card:hover {
+		a > h2 {
+			color: var(--green);
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.card {
+		overflow: hidden;
+		box-shadow: 0 0 8px -3px black;
+		border-radius: 5px;
+		.card-img {
+			grid-area: 1/1/2/13;
+			height: 100%;
+
+			img {
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		.card-details {
+			grid-area: 1/1/2/13;
+			height: 100%;
+			background-color: hsla(217, 64%, 11%, 0.886);
+			align-items: flex-start;
+			padding: 20px;
+
+			.box {
+				background-color: transparent;
+				text-align: left;
+				margin: 0;
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+.project-card {
+	transform: translate(0, 80px);
+	opacity: 0;
+}

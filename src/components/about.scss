@@ -1,0 +1,101 @@
+.about-container {
+	min-height: 80vh;
+	.text {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 50px;
+
+		.about-text {
+			flex: 1 1 350px;
+			p {
+				font-size: 17px;
+				line-height: 1.4;
+				letter-spacing: 0.5px;
+				font-family: "fira code", sans-serif;
+				color: transparent;
+				background-image: linear-gradient(
+					to right,
+					var(--light-slate),
+					var(--light-slate)
+				);
+				background-size: 0% 100%;
+				background-repeat: no-repeat;
+				background-clip: text;
+				display: inline;
+				animation: textanimation linear forwards;
+				animation-timeline: view();
+				animation-range-start: 20vh;
+				animation-range-end: 70vh;
+			}
+		}
+	}
+
+	.photo {
+		align-self: flex-start;
+		max-width: 300px;
+		flex: 1 1 200px;
+		aspect-ratio: 1/1;
+
+		// background-color: var(--navy);
+		border-radius: 10px;
+		transition: all 0.25s linear;
+		position: relative;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: center top;
+			border-radius: 10px;
+			display: block;
+		transition: all 0.25s linear;
+		filter: brightness(90%);
+
+		}
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			// inset: 0px;
+			width: calc(100% - 1px);	//to prevent color flashing while hover on dp
+			height: calc(100% - 1px);	//to prevent color flashing while hover on dp
+			display: inline-block;
+			border-radius: 10px;
+			z-index: 1;
+			transition: all 0.2s ease-in;
+		}
+		&::after {
+			border: 3px solid var(--green);
+			background-color: transparent;
+			z-index: -1;
+			top: 15px;
+			left: 15px;
+		}
+
+		&::before {
+			top: 0;
+			left: 0;
+			background-color: var(--green);
+			mix-blend-mode: multiply;
+		}
+		&:hover {
+			img{
+				transform: translate(-2.5px, -2.5px);
+			}
+			&::before {
+				opacity: 0;
+			}
+			&::after{
+				transform: translate(2.5px, 2.5px);
+			}
+		}
+	}
+}
+
+@keyframes textanimation {
+	100% {
+		background-size: 100% 100%;
+	}
+}
