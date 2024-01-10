@@ -12,7 +12,7 @@ function App() {
 		if (preloader) {
 			setTimeout(() => {
 				setpreloader(false);
-			}, 2000);
+			}, 2500);
 
 			const ctx = gsap.context(() => {
 				const path = pathRef.current;
@@ -37,9 +37,8 @@ function App() {
 					},
 					{
 						opacity: 1,
-						duration: 1,
-					},
-					"-=0.3"
+						duration: 2,
+					}
 				);
 			}, loaderRef.current);
 			return () => ctx.revert();

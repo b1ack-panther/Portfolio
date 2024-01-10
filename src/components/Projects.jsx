@@ -177,7 +177,7 @@ function Projects() {
 					y: 0,
 					stagger: 0.2,
 					ease: "power2.out",
-					duration: 1,
+					duration: 1.5,
 				});
 			}
 		}

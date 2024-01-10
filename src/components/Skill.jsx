@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import "./skill.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,13 +8,14 @@ function Skill() {
 	const skillsRef = useRef(null)
 	gsap.registerPlugin(ScrollTrigger)
 
-	useEffect(() => { 
+	useLayoutEffect(() => { 
 		const ctx = gsap.context(() => {
 			gsap.from([".languages div"], {
 				x: -30,
 				opacity: 0,
 				stagger: 0.1,
-				duration: 0.7,
+				duration: 1.5,
+				ease: "power1.out",
 				scrollTrigger: {
 					trigger: ".languages",
 					start: "top 70%",
@@ -25,7 +26,8 @@ function Skill() {
 				x: -20,
 				opacity: 0,
 				stagger: 0.1,
-				duration: 1,
+				duration: 1.5,
+				ease: "power1.out",
 				scrollTrigger: {
 					trigger: ".libraries",
 					start: "top 70%",

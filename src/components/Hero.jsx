@@ -1,28 +1,25 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import "./Hero.scss";
 import gsap from "gsap";
 
 function Hero() {
 	const heroRef = useRef(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const ctx = gsap.context(() => {
-			gsap.set(".greet, .hero-text h1, .hero-para, .scroll-below", {
-				y: 50, opacity: 0
-			});
-			gsap.to(".greet, .hero-text h1, .hero-para, .scroll-below", {
-				opacity: 1,
-				y: 0,
-				duration: 0.5,
+			gsap.from(".greet, .hero-text h1, .hero-para, .scroll-below", {
+				opacity: 0,
+				y: 30,
+				duration: 1,
 				stagger: 0.1,
-			});
+			}, "+=0.6");
 		}, heroRef);
 		return () => ctx.revert();
 	}, []);
 
 	useEffect(() => {
 		const para = document.querySelector(".hero-para p");
-		let percent = 0;
+		let percent = -30;
 
 		const timeline = setInterval(() => {
 			para.style.backgroundSize = percent + "% 100%";

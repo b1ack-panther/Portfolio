@@ -14,7 +14,7 @@ function About() {
 				opacity: 0,
 				duration: 0.6,
 				delay: 0.2,
-				y: 70,
+				y: 50,
 				scrollTrigger: {
 					trigger: ".photo",
 					start: "top 80%",

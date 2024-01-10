@@ -8,7 +8,6 @@
 	.greet {
 		color: var(--green);
 		font-family: "Fira Code", monospace;
-		opacity: 0; // to prevent gsap flash
 	}
 
 	h1 {
@@ -17,7 +16,6 @@
 		color: var(--lightest-slate);
 		font-weight: 600;
 		line-height: 1.1;
-		opacity: 0;   //to prevent gsap flash
 		&:last-child {
 			color: var(--light-slate);
 		}
@@ -25,7 +23,6 @@
 
 	.scroll-below {
 		margin-top: 10px;
-		opacity: 0;
 	}
 }
 .hero-para > p {

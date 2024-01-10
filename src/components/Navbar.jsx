@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import "./Navbar.scss";
 import About from "./About";
 import Contact from "./Contact";
@@ -11,24 +11,26 @@ function Navbar() {
 	const [menu, setMenu] = useState(false);
 	const rightnavRef = useRef(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const ctx = gsap.context(() => {
 			const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 			tl.from(".right-nav *", {
-				y: -20,
-				stagger: 0.05,
-				duration: 0.3,
+				y: -40,
+				stagger: 0.1,
+				duration: 0.4,
 				opacity: 0,
 			});
+			tl.from(".left-sidebar, .right-sidebar", {
+				opacity: 0
+			}, "+=1.3")
 		}, rightnavRef);
 		return () => ctx.revert();
 	}, []);
 
 	return (
-		<div className="layout">
+		<div className="layout" ref={rightnavRef}>
 			<div className="navbar">
 				<div className="left-nav">
-					
 					<svg
 						id="slogo"
 						viewBox="0 0 150 150"
@@ -61,7 +63,7 @@ function Navbar() {
 						</g>
 					</svg>
 				</div>
-				<div className={`right-nav ${menu ? "show" : ""}`} ref={rightnavRef}>
+				<div className={`right-nav ${menu ? "show" : ""}`}>
 					<ol className="links">
 						<li>
 							<a href="#about">About</a>
