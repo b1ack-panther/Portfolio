@@ -13,7 +13,7 @@ export const mainProjects = [
 		text: "Amazon, an e-commerce site build using React and CSS, integrating Firebase for secure login, validated access, Add to Basket feature, and View Basket functionality.",
 		arr: ["React", "Redux", "CSS"],
 		github: "https://github.com/b1ack-panther/Amazon-clone-ReactJs",
-		live: "https://challenge-c55fa.web.app/",
+		live: "https://amazon-clone-react-js-three.vercel.app/",
 		projectImg: "amazon.png"
 	},
 	{
