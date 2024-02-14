@@ -62,7 +62,6 @@ function Skill() {
 					<div>TailwindCSS</div>
 					<div>Redux</div>
 					<div>GSAP</div>
-					<div>Locomotive-Scroll</div>
 					<div>Express</div>
 					<div>Mongoose</div>
 				</div>
