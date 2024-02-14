@@ -50,13 +50,15 @@ function Skill() {
 					<div>HTML </div>
 					<div>CSS</div>
 					<div>JavaScript</div>
+					<div>Typescript</div>
 					<div>Node.js</div>
 					<div>C++</div>
 					<div>mySQL</div>
         </div>
         <h3>Libraries/Frameworks</h3>
         <div className="libraries">
-					<div>React</div>
+					<div>React.js</div>
+					<div>Next.js</div>
 					<div>TailwindCSS</div>
 					<div>Redux</div>
 					<div>GSAP</div>
