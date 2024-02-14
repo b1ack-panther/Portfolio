@@ -9,7 +9,7 @@
 
 ::selection {
 	background-color: var(--lightest-navy);
-	/* color: var(--lightest-slate); */
+	color: var(--lightest-slate);
 }
 
 :root {
