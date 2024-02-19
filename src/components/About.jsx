@@ -4,12 +4,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function About() {
-
 	const aboutRef = useRef(null);
-	gsap.registerPlugin(ScrollTrigger)
+	gsap.registerPlugin(ScrollTrigger);
 
-	useEffect(() => { 
-		const ctx = gsap.context(() => { 
+	useEffect(() => {
+		const ctx = gsap.context(() => {
 			gsap.from(".photo", {
 				opacity: 0,
 				duration: 0.6,
@@ -19,11 +18,21 @@ function About() {
 					trigger: ".photo",
 					start: "top 80%",
 					scrub: false,
-				}
-			})
-		}, aboutRef)
-		return ()=>ctx.revert()
-	},[])
+				},
+			});
+
+			gsap.to(".about-text p", {
+				backgroundSize: "100% 100%",
+				scrollTrigger: {
+					trigger: ".about-text p",
+					start: "top 80%",
+					end: "top 10%",
+					scrub: true,
+				},
+			});
+		}, aboutRef);
+		return () => ctx.revert();
+	}, []);
 
 	return (
 		<div id="about" className="about-container" ref={aboutRef}>

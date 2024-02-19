@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./projects.scss";
 import { mainProjects, otherProjects } from "../assets.js";
 import gsap from "gsap";
@@ -116,7 +116,7 @@ function OtherCard({ title, text, arr, github, live }) {
 					</a>
 				</div>
 			</div>
-			<a href={live}>
+			<a href={live} target="_blank">
 				<h2>{title}</h2>
 			</a>
 			<p>{text}</p>
@@ -177,11 +177,11 @@ function Projects() {
 					y: 0,
 					stagger: 0.2,
 					ease: "power2.out",
-					duration: 1.5,
+					duration: 1,
 				});
 			}
 		}
-		const observer = new IntersectionObserver(animate, { threshold: 0.5 });
+		const observer = new IntersectionObserver(animate, { threshold: 0 });
 
 		document.querySelectorAll(".project-card").forEach((box) => {
 			observer.observe(box);

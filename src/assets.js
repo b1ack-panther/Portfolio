@@ -22,7 +22,7 @@ export const mainProjects = [
 		arr: ["React", "CSS", "Express"],
 		github: "https://github.com/b1ack-panther/Fullstackapp?tab=readme-ov-file",
 		live: "https://fullstackapp-o5ez.vercel.app/",
-		projectImg: "https://private-user-images.githubusercontent.com/112254703/301242318-143e9de3-3249-433c-9511-00faff458e29.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc5MjUyMDcsIm5iZiI6MTcwNzkyNDkwNywicGF0aCI6Ii8xMTIyNTQ3MDMvMzAxMjQyMzE4LTE0M2U5ZGUzLTMyNDktNDMzYy05NTExLTAwZmFmZjQ1OGUyOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIxNFQxNTM1MDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MmNlZDU0NDUwNzk2NDhhNzkxZWFiODg5Y2Q4ODJjMTRkMWJiZDU1M2NlNGRiOTEwOWQyM2RmMTgxODhiOGYxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._5k1OA75gehJRqWZMmvDUGGHe7thuyny7U40FouKIew"
+		projectImg: "fullstack.png"
 	},
 	{
 		title: "Too Good Co",
