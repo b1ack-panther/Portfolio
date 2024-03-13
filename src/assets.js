@@ -1,5 +1,14 @@
 export const mainProjects = [
 	{
+		title: "Fullstack Discord Clone",
+		text: "Fullstack Discord Clone deploy text, audio, and video call channels with 1:1 conversation capabilities using Next.js and Socket.io for real-time messaging. I integrated member management features for secure interactions and designed a visually appealing UI with TailwindCSS, supporting Light/Dark mode.",
+		arr: ["NextJs, Typescript, Socket.io, Prisma, Tailwind, React-Query"],
+		github:
+			"https://github.com/b1ack-panther/discord-clone",
+		live: "https://discord-clone-production-f83d.up.railway.app/",
+		projectImg: "https://utfs.io/f/edfb8b34-f9c1-455f-8963-9af22546970c-fd730m.png"
+	},
+	{
 		title: "Flirty Flowers",
 		text: "Flirty Flowers employs React, GSAP, Locomotive Scroll, and modern CSS for a visually stunning, animated, and clean website design, offering an immersive user experience.",
 		arr: ["React", "GSAP", "CSS", "Locomotive-Scroll"],
