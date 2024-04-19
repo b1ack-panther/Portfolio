@@ -35,11 +35,11 @@ function Hero() {
 			<p className="greet">Hi, my name is</p>
 			<div className="hero-text">
 				<h1>Saurabh Singh.</h1>
-				<h1>I specialize in frontend development.</h1>
+				<h1>I specialize in Fullstack development.</h1>
 			</div>
 			<div className="hero-para">
 				<p>
-					I'm Frontend focused Web Developer combining beautiful design with
+					I'm Fullstack Developer combining beautiful design with
 					codes and building exceptional Web Applications that leads to the
 					success of the overall product.
 				</p>
