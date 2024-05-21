@@ -9,6 +9,14 @@ export const mainProjects = [
 		projectImg: "https://utfs.io/f/edfb8b34-f9c1-455f-8963-9af22546970c-fd730m.png"
 	},
 	{
+		title: "techNotes",
+		text: "TechNotes is a MERN stack ticket-raising app for gadget repairs, featuring role-based access for Admins, Managers, and Employees. It uses JWT for secure authorization, supports easy navigation, and ensures accountability with ticket assignments and comprehensive user management features.",
+		arr: ["React", "CSS", "Express", "MongoDB", "Node"],
+		github: "https://github.com/b1ack-panther/techNotes",
+		live: "https://tech-notes-psqnidvqm-saurabh-singhs-projects.vercel.app/",
+		projectImg: "techNotes.png",
+	},
+	{
 		title: "Flirty Flowers",
 		text: "Flirty Flowers employs React, GSAP, Locomotive Scroll, and modern CSS for a visually stunning, animated, and clean website design, offering an immersive user experience.",
 		arr: ["React", "GSAP", "CSS", "Locomotive-Scroll"],
