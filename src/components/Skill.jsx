@@ -53,7 +53,7 @@ function Skill() {
 					<div>Typescript</div>
 					<div>Node.js</div>
 					<div>C++</div>
-					<div>mySQL</div>
+					<div>SQL</div>
         </div>
         <h3>Libraries/Frameworks</h3>
         <div className="libraries">
