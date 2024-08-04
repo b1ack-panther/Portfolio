@@ -55,7 +55,7 @@ export const otherProjects = [
 	{
 		title: "Object Detection",
 		text: "Developed an object detection website using React and TensorFlow COCO-SSD model to identify and classify objects. Integrated React-Webcam for real-time detection, displaying objects with bounding boxes and labels.",
-		arr: ["React", "tensorflow/coco-ssd", "react-webcam", "CSS"],
+		arr: ["React", "tensorflow/coco-ssd"],
 		github:
 			"https://github.com/b1ack-panther/object-detection/tree/main",
 		live: "https://object-detection-eight.vercel.app/",
