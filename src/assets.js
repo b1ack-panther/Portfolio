@@ -53,6 +53,14 @@ export const mainProjects = [
 
 export const otherProjects = [
 	{
+		title: "Object Detection",
+		text: "Developed an object detection website using React and TensorFlow COCO-SSD model to identify and classify objects. Integrated React-Webcam for real-time detection, displaying objects with bounding boxes and labels.",
+		arr: ["React", "tensorflow/coco-ssd", "react-webcam", "CSS"],
+		github:
+			"https://github.com/b1ack-panther/object-detection/tree/main",
+		live: "https://object-detection-eight.vercel.app/",
+	},
+	{
 		title: "Google Stories",
 		text: "Google Stories recreated with React, GSAP, CSS, and SplitText for an alluring, animation-rich website resembling the captivating Google Stories platform.",
 		arr: ["React", "GSAP", "CSS", "SplitText"],
