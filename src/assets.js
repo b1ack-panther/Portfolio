@@ -1,6 +1,6 @@
 export const mainProjects = [
 	{
-		title: "Fullstack Discord Clone",
+		title: "XChord",
 		text: "Fullstack Discord Clone deploy text, audio, and video call channels with 1:1 conversation capabilities using Next.js and Socket.io for real-time messaging. I integrated member management features for secure interactions and designed a visually appealing UI with TailwindCSS, supporting Light/Dark mode.",
 		arr: ["NextJs, Typescript, Socket.io, Prisma, Tailwind, React-Query"],
 		github:
