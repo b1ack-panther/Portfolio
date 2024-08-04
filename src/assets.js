@@ -34,7 +34,7 @@ export const mainProjects = [
 		projectImg: "amazon.png"
 	},
 	{
-		title: "Fullstack Dashboard",
+		title: "Dashboard",
 		text: "A small fullstack dashboard made with React.js, CSS, Recharts, Express.js etc. showing data coming from backend api with attractive UI.",
 		arr: ["React", "CSS", "Express"],
 		github: "https://github.com/b1ack-panther/Fullstackapp?tab=readme-ov-file",
