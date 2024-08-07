@@ -13,7 +13,7 @@ export const mainProjects = [
 		text: "TechNotes is a MERN stack ticket-raising app for gadget repairs, featuring role-based access for Admins, Managers, and Employees. It uses JWT for secure authorization, supports easy navigation, and ensures accountability with ticket assignments and comprehensive user management features.",
 		arr: ["React", "CSS", "Express", "MongoDB", "Node"],
 		github: "https://github.com/b1ack-panther/techNotes",
-		live: "https://tech-notes-psqnidvqm-saurabh-singhs-projects.vercel.app/",
+		live: "https://tech-notes-ten.vercel.app/",
 		projectImg: "techNotes.png",
 	},
 	{
