@@ -17,6 +17,14 @@ export const mainProjects = [
 		projectImg: "techNotes.png",
 	},
 	{
+		title: "AI Chat",
+		text: "Developed a dynamic chat interface using Shadcn UI with immediate message updates, past interaction retrieval, and dark/light mode toggle.Integrated Supabase for user authentication, supporting email/Google sign-ups and secure session management.Enabled user profile access and review of past engagements post-login.",
+		arr: ["Next.js", "Tailwind", "Supabase", "Typescript", "ShadcnUI"],
+		github: "https://github.com/b1ack-panther/AI-chat-bot/tree/main",
+		live: "https://ai-chat-bot-jade-ten.vercel.app/",
+		projectImg: "AIChat.png",
+	},
+	{
 		title: "Flirty Flowers",
 		text: "Flirty Flowers employs React, GSAP, Locomotive Scroll, and modern CSS for a visually stunning, animated, and clean website design, offering an immersive user experience.",
 		arr: ["React", "GSAP", "CSS", "Locomotive-Scroll"],
