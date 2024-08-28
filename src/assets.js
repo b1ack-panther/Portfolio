@@ -1,4 +1,14 @@
 export const mainProjects = [
+	
+	{
+		title: "Skailama",
+		text: "Fullstack Discord Clone deploy text, audio, and video call channels with 1:1 conversation capabilities using Next.js and Socket.io for real-time messaging. I integrated member management features for secure interactions and designed a visually appealing UI with TailwindCSS, supporting Light/Dark mode.",
+		arr: ["React, Express.js, Mongodb"],
+		github:
+			"https://github.com/b1ack-panther/_skailama",
+		live: "https://skailama-phi.vercel.app/",
+		projectImg: "skailama.png"
+	},
 	{
 		title: "XChord",
 		text: "Fullstack Discord Clone deploy text, audio, and video call channels with 1:1 conversation capabilities using Next.js and Socket.io for real-time messaging. I integrated member management features for secure interactions and designed a visually appealing UI with TailwindCSS, supporting Light/Dark mode.",
@@ -34,14 +44,6 @@ export const mainProjects = [
 		projectImg: "flirtyflower.png"
 	},
 	{
-		title: "Amazon Clone",
-		text: "Amazon, an e-commerce site build using React and CSS, integrating Firebase for secure login, validated access, Add to Basket feature, and View Basket functionality.",
-		arr: ["React", "Redux", "CSS"],
-		github: "https://github.com/b1ack-panther/Amazon-clone-ReactJs",
-		live: "https://amazon-clone-react-js-three.vercel.app/",
-		projectImg: "amazon.png"
-	},
-	{
 		title: "Dashboard",
 		text: "A small fullstack dashboard made with React.js, CSS, Recharts, Express.js etc. showing data coming from backend api with attractive UI.",
 		arr: ["React", "CSS", "Express"],
@@ -49,14 +51,7 @@ export const mainProjects = [
 		live: "https://fullstackapp-o5ez.vercel.app/",
 		projectImg: "fullstack.png"
 	},
-	{
-		title: "Too Good Co",
-		text: "It's a Modern, award winning, animation-rich website using HTML, CSS, JS, GSAP and Scroll-based animations for a sleek, contemporary design.",
-		arr: ["HTML", "CSS", "JavaScript", "GSAP", "Intersection-observer"],
-		github: "https://github.com/b1ack-panther/Too-good-Co",
-		live: "https://b1ack-panther.github.io/Too-good-Co/",
-		projectImg : "toogood.png"
-	},
+	
 ];
 
 export const otherProjects = [
@@ -67,6 +62,22 @@ export const otherProjects = [
 		github:
 			"https://github.com/b1ack-panther/object-detection/tree/main",
 		live: "https://object-detection-eight.vercel.app/",
+	},
+	{
+		title: "Too Good Co",
+		text: "It's a Modern, award winning, animation-rich website using HTML, CSS, JS, GSAP and Scroll-based animations for a sleek, contemporary design.",
+		arr: ["HTML", "CSS", "JavaScript", "GSAP", "Intersection-observer"],
+		github: "https://github.com/b1ack-panther/Too-good-Co",
+		live: "https://b1ack-panther.github.io/Too-good-Co/",
+		projectImg : "toogood.png"
+	},
+	{
+		title: "Amazon Clone",
+		text: "Amazon, an e-commerce site build using React and CSS, integrating Firebase for secure login, validated access, Add to Basket feature, and View Basket functionality.",
+		arr: ["React", "Redux", "CSS"],
+		github: "https://github.com/b1ack-panther/Amazon-clone-ReactJs",
+		live: "https://amazon-clone-react-js-three.vercel.app/",
+		projectImg: "amazon.png"
 	},
 	{
 		title: "Google Stories",
