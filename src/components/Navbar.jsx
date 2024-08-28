@@ -81,7 +81,7 @@ function Navbar() {
 							<button
 								onClick={() => {
 									window.open(
-										"https://drive.google.com/file/d/1yr_z7F9n5J3VTcEuuEWKnaHJTKJvLs-W/view?usp=sharing",
+										"https://drive.google.com/file/d/1kMkXg3yznKIMhBryAh3Ewj1Qrq5PhQFH/view?usp=sharing",
 										"_blank"
 									);
 								}}
