@@ -2,8 +2,8 @@ export const mainProjects = [
 	
 	{
 		title: "Skailama",
-		text: "Fullstack Discord Clone deploy text, audio, and video call channels with 1:1 conversation capabilities using Next.js and Socket.io for real-time messaging. I integrated member management features for secure interactions and designed a visually appealing UI with TailwindCSS, supporting Light/Dark mode.",
-		arr: ["React, Express.js, Mongodb"],
+		text: "Developed a MERN stack and Redux application, implementing robust CRUD functionality for dynamic content management. Utilized Redux for state management to streamline data flow and ensure efficient updates. Integrated MongoDB, Express, and Node.js for backend operations and React for user-friendly UI, incorporating loading components and visually optimized design elements for an enhanced user experience.",
+		arr: ["React, Redux, Express.js, Mongodb"],
 		github:
 			"https://github.com/b1ack-panther/_skailama",
 		live: "https://skailama-phi.vercel.app/",
