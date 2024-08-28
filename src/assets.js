@@ -2,7 +2,7 @@ export const mainProjects = [
 	
 	{
 		title: "Skailama",
-		text: "Developed a MERN stack and Redux application, implementing robust CRUD functionality for dynamic content management. Utilized Redux for state management to streamline data flow and ensure efficient updates. Integrated MongoDB, Express, and Node.js for backend operations and React for user-friendly UI, incorporating loading components and visually optimized design elements for an enhanced user experience.",
+		text: "Developed a MERN stack and Redux application, implementing robust CRUD functionality for dynamic content management. Utilized Redux for state management to streamline data flow and ensure efficient updates. Integrated MongoDB, Express, and Node.js for backend operations.",
 		arr: ["React, Redux, Express.js, Mongodb"],
 		github:
 			"https://github.com/b1ack-panther/_skailama",
