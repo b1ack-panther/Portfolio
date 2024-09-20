@@ -15,16 +15,8 @@ export const mainProjects = [
 		arr: ["NextJs, Typescript, Socket.io, Prisma, Tailwind, React-Query"],
 		github:
 			"https://github.com/b1ack-panther/discord-clone",
-		live: "https://discord-clone-production-f83d.up.railway.app/",
+		live: "https://github.com/b1ack-panther/discord-clone",
 		projectImg: "https://utfs.io/f/edfb8b34-f9c1-455f-8963-9af22546970c-fd730m.png"
-	},
-	{
-		title: "techNotes",
-		text: "TechNotes is a MERN stack ticket-raising app for gadget repairs, featuring role-based access for Admins, Managers, and Employees. It uses JWT for secure authorization, supports easy navigation, and ensures accountability with ticket assignments and comprehensive user management features.",
-		arr: ["React", "CSS", "Express", "MongoDB", "Node"],
-		github: "https://github.com/b1ack-panther/techNotes",
-		live: "https://tech-notes-ten.vercel.app/",
-		projectImg: "techNotes.png",
 	},
 	{
 		title: "AI Chat",
@@ -35,14 +27,27 @@ export const mainProjects = [
 		projectImg: "AIChat.png",
 	},
 	{
-		title: "Flirty Flowers",
-		text: "Flirty Flowers employs React, GSAP, Locomotive Scroll, and modern CSS for a visually stunning, animated, and clean website design, offering an immersive user experience.",
-		arr: ["React", "GSAP", "CSS", "Locomotive-Scroll"],
-		github:
-			"https://github.com/b1ack-panther/Flirty-Flowers--GSAP-Locomotive-Scroll-",
-		live: "https://flirty-flowers-gsap-locomotive-scroll.vercel.app/",
-		projectImg: "flirtyflower.png"
+		title: "Too Good Co",
+		text: "It's a Modern, award winning, animation-rich website using HTML, CSS, JS, GSAP and Scroll-based animations for a sleek, contemporary design.",
+		arr: ["HTML", "CSS", "JavaScript", "GSAP", "Intersection-observer"],
+		github: "https://github.com/b1ack-panther/Too-good-Co",
+		live: "https://b1ack-panther.github.io/Too-good-Co/",
+		projectImg : "toogood.png"
 	},
+	
+	{
+		title: "techNotes",
+		text: "TechNotes is a MERN stack ticket-raising app for gadget repairs, featuring role-based access for Admins, Managers, and Employees. It uses JWT for secure authorization, supports easy navigation, and ensures accountability with ticket assignments and comprehensive user management features.",
+		arr: ["React", "CSS", "Express", "MongoDB", "Node"],
+		github: "https://github.com/b1ack-panther/techNotes",
+		live: "https://tech-notes-ten.vercel.app/",
+		projectImg: "techNotes.png",
+	},
+	
+	
+];
+
+export const otherProjects = [
 	{
 		title: "Dashboard",
 		text: "A small fullstack dashboard made with React.js, CSS, Recharts, Express.js etc. showing data coming from backend api with attractive UI.",
@@ -51,10 +56,6 @@ export const mainProjects = [
 		live: "https://fullstackapp-o5ez.vercel.app/",
 		projectImg: "fullstack.png"
 	},
-	
-];
-
-export const otherProjects = [
 	{
 		title: "Object Detection",
 		text: "Developed an object detection website using React and TensorFlow COCO-SSD model to identify and classify objects. Integrated React-Webcam for real-time detection, displaying objects with bounding boxes and labels.",
@@ -64,12 +65,12 @@ export const otherProjects = [
 		live: "https://object-detection-eight.vercel.app/",
 	},
 	{
-		title: "Too Good Co",
-		text: "It's a Modern, award winning, animation-rich website using HTML, CSS, JS, GSAP and Scroll-based animations for a sleek, contemporary design.",
-		arr: ["HTML", "CSS", "JavaScript", "GSAP", "Intersection-observer"],
-		github: "https://github.com/b1ack-panther/Too-good-Co",
-		live: "https://b1ack-panther.github.io/Too-good-Co/",
-		projectImg : "toogood.png"
+		title: "Dashboard",
+		text: "A small fullstack dashboard made with React.js, CSS, Recharts, Express.js etc. showing data coming from backend api with attractive UI.",
+		arr: ["React", "CSS", "Express"],
+		github: "https://github.com/b1ack-panther/Fullstackapp?tab=readme-ov-file",
+		live: "https://fullstackapp-o5ez.vercel.app/",
+		projectImg: "fullstack.png"
 	},
 	{
 		title: "Amazon Clone",
