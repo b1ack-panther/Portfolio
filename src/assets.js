@@ -1,13 +1,13 @@
 export const mainProjects = [
 	
 	{
-		title: "Skailama",
-		text: "Developed a MERN stack and Redux application, implementing robust CRUD functionality for dynamic content management. Utilized Redux for state management to streamline data flow and ensure efficient updates. Integrated MongoDB, Express, and Node.js for backend operations.",
-		arr: ["React, Redux, Express.js, Mongodb"],
+		title: "Kanbanboard",
+		text: "The Kanban board project is a task management app built with the MERN stack (MongoDB, Express, Node.js) and secured with JWT authentication. The frontend uses Next.js, ShadCN UI, and Framer Motion for drag-and-drop functionality. Redux with createAsyncThunk handles state management, while Zod ensures form validation and data consistency.",
+		arr: ["NextJs, Typescript, Shadcn, Redux, Zod, Express, Mongoose"],
 		github:
-			"https://github.com/b1ack-panther/_skailama",
-		live: "https://skailama-phi.vercel.app/",
-		projectImg: "skailama.png"
+			"https://github.com/b1ack-panther/kanbanboard-next.js_",
+		live: "https://kanbanboard-next-js.vercel.app",
+		projectImg: "https://github.com/b1ack-panther/Portfolio/blob/main/public/kanbanboard.png"
 	},
 	{
 		title: "XChord",
@@ -26,14 +26,6 @@ export const mainProjects = [
 		live: "https://ai-chat-bot-jade-ten.vercel.app/",
 		projectImg: "AIChat.png",
 	},
-	{
-		title: "Too Good Co",
-		text: "It's a Modern, award winning, animation-rich website using HTML, CSS, JS, GSAP and Scroll-based animations for a sleek, contemporary design.",
-		arr: ["HTML", "CSS", "JavaScript", "GSAP", "Intersection-observer"],
-		github: "https://github.com/b1ack-panther/Too-good-Co",
-		live: "https://b1ack-panther.github.io/Too-good-Co/",
-		projectImg : "toogood.png"
-	},
 	
 	{
 		title: "techNotes",
@@ -48,6 +40,23 @@ export const mainProjects = [
 ];
 
 export const otherProjects = [
+	{
+		title: "Too Good Co",
+		text: "It's a Modern, award winning, animation-rich website using HTML, CSS, JS, GSAP and Scroll-based animations for a sleek, contemporary design.",
+		arr: ["HTML", "CSS", "JavaScript", "GSAP", "Intersection-observer"],
+		github: "https://github.com/b1ack-panther/Too-good-Co",
+		live: "https://b1ack-panther.github.io/Too-good-Co/",
+		projectImg : "toogood.png"
+	},
+	{
+		title: "Skailama",
+		text: "Developed a MERN stack and Redux application, implementing robust CRUD functionality for dynamic content management. Utilized Redux for state management to streamline data flow and ensure efficient updates. Integrated MongoDB, Express, and Node.js for backend operations.",
+		arr: ["React, Redux, Express.js, Mongodb"],
+		github:
+			"https://github.com/b1ack-panther/_skailama",
+		live: "https://skailama-phi.vercel.app/",
+		projectImg: "skailama.png"
+	},
 	{
 		title: "Dashboard",
 		text: "A small fullstack dashboard made with React.js, CSS, Recharts, Express.js etc. showing data coming from backend api with attractive UI.",
