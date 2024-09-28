@@ -7,7 +7,7 @@ export const mainProjects = [
 		github:
 			"https://github.com/b1ack-panther/kanbanboard-next.js_",
 		live: "https://kanbanboard-next-js.vercel.app",
-		projectImg: "https://github.com/b1ack-panther/Portfolio/blob/main/public/kanbanboard.png"
+		projectImg: "https://raw.githubusercontent.com/b1ack-panther/Portfolio/refs/heads/main/public/kanbanboard.png"
 	},
 	{
 		title: "XChord",
