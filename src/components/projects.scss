@@ -1,6 +1,7 @@
 .projects-container {
 	min-height: 100vh;
 	margin: 100px 0;
+
 	.projects {
 		display: flex;
 		flex-direction: column;
@@ -134,6 +135,7 @@
 			flex-direction: column;
 			gap: 10px;
 			box-shadow: 0px 0 20px -8px black;
+			text-decoration: none;
 
 			.icons {
 				display: flex;
@@ -167,6 +169,7 @@
 				color: var(--light-slate);
 				margin-bottom: 10px;
 				letter-spacing: 0.5px;
+				text-decoration: none !important;
 			}
 			.techs {
 				margin-top: auto;

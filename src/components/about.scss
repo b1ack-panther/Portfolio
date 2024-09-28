@@ -49,8 +49,8 @@
 			object-position: center top;
 			border-radius: 5px;
 			display: block;
-		transition: all 0.25s linear;
-		filter: brightness(90%);
+			transition: all 0.25s linear;
+			filter: brightness(90%);
 		}
 
 		&::after,
@@ -80,13 +80,13 @@
 			mix-blend-mode: multiply;
 		}
 		&:hover {
-			img{
+			img {
 				transform: translate(-2.5px, -2.5px);
 			}
 			&::before {
 				opacity: 0;
 			}
-			&::after{
+			&::after {
 				transform: translate(2.5px, 2.5px);
 			}
 		}

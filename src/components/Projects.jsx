@@ -63,7 +63,7 @@ function Card({ title, text, arr, github, live, projectImg, index }) {
 
 function OtherCard({ title, text, arr, github, live }) {
 	return (
-		<div className="other-card project-card">
+		<a target="_blank" href={live} className="other-card project-card">
 			<div className="icons">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ function OtherCard({ title, text, arr, github, live }) {
 					return <p key={tech}>{tech}</p>;
 				})}
 			</div>
-		</div>
+		</a>
 	);
 }
 
