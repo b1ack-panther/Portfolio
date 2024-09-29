@@ -15,7 +15,7 @@ export const mainProjects = [
 		arr: ["NextJs, Typescript, Socket.io, Prisma, Tailwind, React-Query"],
 		github:
 			"https://github.com/b1ack-panther/discord-clone",
-		live: "https://github.com/b1ack-panther/discord-clone",
+		live: "https://discord-clone-production-c7f2.up.railway.app",
 		projectImg: "https://utfs.io/f/edfb8b34-f9c1-455f-8963-9af22546970c-fd730m.png"
 	},
 	{
