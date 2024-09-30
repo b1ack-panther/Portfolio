@@ -49,6 +49,15 @@ export const otherProjects = [
 		projectImg : "toogood.png"
 	},
 	{
+		title: "Flirty Flowers",
+		text: "Flirty Flowers employs React, GSAP, Locomotive Scroll, and modern CSS for a visually stunning, animated, and clean website design, offering an immersive user experience.",
+		arr: ["React", "GSAP", "CSS", "Locomotive-Scroll"],
+		github:
+			"https://github.com/b1ack-panther/Flirty-Flowers--GSAP-Locomotive-Scroll-",
+		live: "https://flirty-flowers-gsap-locomotive-scroll.vercel.app/",
+		projectImg: "flirtyflower.png"
+	},
+	{
 		title: "Skailama",
 		text: "Developed a MERN stack and Redux application, implementing robust CRUD functionality for dynamic content management. Utilized Redux for state management to streamline data flow and ensure efficient updates. Integrated MongoDB, Express, and Node.js for backend operations.",
 		arr: ["React, Redux, Express.js, Mongodb"],
